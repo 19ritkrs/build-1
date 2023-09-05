@@ -10,7 +10,7 @@ public class KubContyroller {
 	
 	@GetMapping("/details")
 	public String getDetails() {
-		return "Doc-Kub-Jenkins-CICD-Learning";
+		return "Doc-Kub-Jenkins-CICD-Learning,build-1";
 	}
 	
 	@GetMapping
