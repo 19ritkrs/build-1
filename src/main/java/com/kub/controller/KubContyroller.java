@@ -12,5 +12,11 @@ public class KubContyroller {
 	public String getDetails() {
 		return "Doc-Kub-Jenkins-CICD-Learning";
 	}
+	
+	@GetMapping
+	public String getMessage() {
+		
+		return "Testing";
+	}
 
 }
