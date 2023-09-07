@@ -28,33 +28,9 @@ metadata: # Metadata of the resource kind we are creating
   name: springboot-k8ssvc
 spec:
   selector:
-    app: spring-boot-k8s #Give the project name here
-    ports:
-    - name: 'http'
-      targetPort: 8080
-      type: NodePort
-      
-      
-      
-      
-      
-#      apiVersion: v1
-#kind: Service
-#metadata:
-#  name: myapp-service
-#spec:
-#  type: NodePort  # Use NodePort type for exposing the service
-#  selector:
-#    app: myapp  # Label selector to target your Spring Boot application pods
-#  ports:
-#    - name: http
-#      targetPort: 8080
-#    
-    
-#    
-#      port: 8080 # The port that the service is running on in the cluster
-#      targetPort: 8080 # The port exposed by the service
-#  type: NodePort # type of the service.
-  
-  
-  
+    app: spring-boot-k8s
+  ports:
+    - protocol: "TCP"
+      port: 8080 # The port that the service is running on in the cluster
+      targetPort: 8080 # The port exposed by the service
+  type: NodePort # type of the service.
