@@ -16,7 +16,7 @@ public class KubContyroller {
 	@GetMapping
 	public String getMessage() {
 		
-		return "Testing";
+		return "Testing"; //sbacbkrlsbcau
 	}
 
 }

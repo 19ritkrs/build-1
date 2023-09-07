@@ -29,8 +29,15 @@ metadata: # Metadata of the resource kind we are creating
 spec:
   selector:
     app: spring-boot-k8s #Give the project name here
-  ports:
-    - protocol: "TCP"
-      port: 8080 # The port that the service is running on in the cluster
-      targetPort: 8080 # The port exposed by the service
-  type: NodePort # type of the service.
+    ports:
+    - name: http
+      targetPort: 8080
+    
+    
+#    
+#      port: 8080 # The port that the service is running on in the cluster
+#      targetPort: 8080 # The port exposed by the service
+#  type: NodePort # type of the service.
+  
+  
+  
